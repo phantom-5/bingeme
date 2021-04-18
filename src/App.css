@@ -1,0 +1,17 @@
+img {
+  border-radius: 50%;
+}
+
+.round {
+  border-radius: 0%;
+  width: 10%;
+  margin-bottom: 3%;
+}
+
+.myForm {
+  margin-top: 10%
+}
+
+.myCard {
+  width: 18rem;
+}
