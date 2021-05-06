@@ -4,6 +4,8 @@ import {useState, useEffect} from 'react'
 import UserCard from './UserCard'
 import Loading from './Loading'
 
+
+
 const PublicPage = () => {
 
     const[userData,setUserData] = useState([])

@@ -7,7 +7,7 @@ import PrivateList from './components/PrivateList'
 import PublicPage from './components/PublicPage'
 import PublicList from './components/PublicList'
 
-
+console.log = () => {} //disable console
 
 
 

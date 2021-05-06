@@ -1,6 +1,8 @@
 //Public list of particular user
 import {useState, useEffect} from 'react'
 
+
+
 const PublicList = (props) => {
 
     const user_id = props.location.state.id

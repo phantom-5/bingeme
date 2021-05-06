@@ -8,6 +8,7 @@ import Cookies from 'universal-cookie'
 import Swal from 'sweetalert2'
 
 
+
 const UserCard = (props) => {
 
     const[userDetails,setUserDetails] = useState({
