@@ -15,3 +15,9 @@ img {
 .myCard {
   width: 18rem;
 }
+
+.loading {
+  position: relative;
+  left: 40%;
+  margin-top: 30%;
+}

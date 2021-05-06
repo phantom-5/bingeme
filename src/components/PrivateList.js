@@ -73,6 +73,7 @@ const PrivateList = () => {
                 }
           }
           })
+          if(!newItemData.isDismissed){
           console.log(newItemData.value)
           const {name, genre, platform, review, score, url} = newItemData.value
           if(!(name && genre && platform && score)){
@@ -108,6 +109,7 @@ const PrivateList = () => {
                   setPrivateList({...privateList,'data':[...privateList.data,newItemData.value]})
               }
           }
+        }
 
     }
 
@@ -155,7 +157,7 @@ const PrivateList = () => {
                 }
           }
           })
-
+          if(!newItemData.isDismissed){
           console.log(newItemData.value)
           const {name, genre, platform, review, score, url} = newItemData.value
           if(!(name && genre && platform && score)){
@@ -190,6 +192,7 @@ const PrivateList = () => {
                   })
               }
           }
+        }
 
     }
 

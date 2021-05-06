@@ -2,10 +2,12 @@
 
 import {useState, useEffect} from 'react'
 import UserCard from './UserCard'
+import Loading from './Loading'
 
 const PublicPage = () => {
 
     const[userData,setUserData] = useState([])
+    const[loading,setLoading] = useState(true)
 
     const getIds = async() => {
 
@@ -21,6 +23,8 @@ const PublicPage = () => {
        // console.log(res[0].user)
 
         setUserData([...res])
+        setLoading(false)
+        
            
     }
 
@@ -29,9 +33,10 @@ const PublicPage = () => {
     
     return (
     
-    <div class="container">
-      <div class="row">
-        {userData.map(data=>(
+    <div className="container">
+      <div className="row">
+        {loading && <Loading/>}
+        {!loading && userData.map(data=>(
             <UserCard id={data.user}/>
         ))}
     </div>

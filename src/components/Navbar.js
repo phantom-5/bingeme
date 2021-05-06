@@ -46,7 +46,7 @@ const NavbarLI = () => {
           setButtonName('Logout')
           setButtonTo('/')
           setButtonOne(cookie_username)
-          setButtonOnePath('#')
+          setButtonOnePath('/dashboard/private')
 
           
         }else{
